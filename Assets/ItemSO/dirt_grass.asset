@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20e54a74c1fc2a64ea133e04ff9f95aa, type: 3}
+  m_Name: dirt_grass
+  m_EditorClassIdentifier: Assembly-CSharp::ItemData
+  itemId: 2
+  itemName: "\u8349\u4ED8\u304D\u571F\u30D6\u30ED\u30C3\u30AF"
+  icon: {fileID: -547810283841329392, guid: 3d4827bc4f405f543b04b9f05bf61d88, type: 3}
+  description: "\u30A2\u30A4\u30C6\u30E0\u306E\u8AAC\u660E"
+  itemType: 0
+  maxStack: 999
+  isPlaceable: 1
+  blockPrefab: {fileID: 3835458099766667319, guid: 2e323b8d0b78aa841bcd8983edbc498b, type: 3}
+  miningPower: 0

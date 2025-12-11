@@ -5,14 +5,19 @@ public class Block : MonoBehaviour
     [Header("ブロック情報")]
     public ItemData blockItemData; // このブロックに対応するItemData
     
-    [Header("採掘設定")]
-    [SerializeField] private float hardness = 1f; // 硬さ（採掘にかかる時間）
-    
     private float currentHealth;
     
     void Start()
     {
-        currentHealth = hardness;
+        // ブロックの硬さを設定
+        if (blockItemData != null)
+        {
+            currentHealth = blockItemData.hardness;
+        }
+        else
+        {
+            currentHealth = 1f; // デフォルト値
+        }
         
         // 地面として配置されたブロックはRigidbody2Dを削除
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
@@ -39,10 +44,23 @@ public class Block : MonoBehaviour
     // ブロックが破壊された時
     void Break()
     {
-        // アイテムをドロップ
         if (blockItemData != null)
         {
-            DroppedItem.Create(blockItemData, 1, transform.position);
+            // ドロップテーブルからアイテムを生成
+            var drops = blockItemData.GetDrops();
+            
+            if (drops.Count > 0)
+            {
+                foreach (var drop in drops)
+                {
+                    DroppedItem.Create(drop.item, drop.quantity, transform.position);
+                }
+            }
+            else
+            {
+                // ドロップ設定がない場合は自分自身をドロップ（後方互換）
+                DroppedItem.Create(blockItemData, 1, transform.position);
+            }
         }
         
         // ブロックを削除

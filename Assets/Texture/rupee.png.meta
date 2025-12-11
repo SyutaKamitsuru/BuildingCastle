@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: cd3c146e3a158804eae0043105ab3b1d
+guid: 9afcddfe688fef147bb3f188f7bb29ea
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8161357371293852118
-    second: pixel-character_0
+      213: -8974885115152272457
+    second: rupee_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,12 +113,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pixel-character_0
+      name: rupee_0
       rect:
         serializedVersion: 2
-        x: 6
+        x: 3
         y: 0
-        width: 20
+        width: 26
         height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6d16cf8d947f24170800000000000000
-      internalID: 8161357371293852118
+      spriteID: 7b3786be98dc27380800000000000000
+      internalID: -8974885115152272457
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      pixel-character_0: 8161357371293852118
+      rupee_0: -8974885115152272457
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

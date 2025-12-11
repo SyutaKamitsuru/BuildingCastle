@@ -127,7 +127,10 @@ public class GroundGenerator : MonoBehaviour
                     // ブロックとして配置可能かチェック
                     if (itemData.isPlaceable && itemData.blockPrefab != null)
                     {
-                        Instantiate(itemData.blockPrefab, position, Quaternion.identity, transform);
+                        GameObject block = Instantiate(itemData.blockPrefab, position, Quaternion.identity, transform);
+                        
+                        // Groundレイヤーを設定
+                        block.layer = LayerMask.NameToLayer("Ground");
                     }
                     else
                     {
